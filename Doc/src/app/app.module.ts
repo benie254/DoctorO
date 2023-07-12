@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ReqInterceptor } from './interceptor/req.interceptor';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatChipsModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: ReqInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
