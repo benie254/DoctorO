@@ -141,7 +141,6 @@ export class ErrorsService {
   }
   constructor(
     private messages: MessagesService,
-    private router:Router,
     ) { 
       this.currentUserSubject = new BehaviorSubject<any>(JSON.parse(localStorage.getItem('currentUser')));
     }
