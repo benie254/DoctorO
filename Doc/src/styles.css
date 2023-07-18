@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap');
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -75,4 +78,11 @@ a:hover, .nav-link:hover{
 }
 .margin{
     margin: 5%;
+}
+p, span, .card-header, .nav-link{
+    font-family: 'Newsreader', serif;
+    font-size: medium;
+}
+.navbar-brand{
+    font-family: 'Angkor', cursive;
 }
