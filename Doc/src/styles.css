@@ -2,3 +2,77 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.padding{
+    padding: 5%;
+}
+.padding-md{
+    padding: 2.5%;
+}
+.padding-lg{
+    padding: 10%;
+}
+#cover{
+    max-height:640px;
+    max-width:100%;
+}
+#cover-sm{
+    max-height:300px;
+    max-width:100%;
+}
+.lavender{
+    background-color:#E2E4F6;
+}
+.mint{
+    background-color: #DEFFFC;
+}
+.white{
+    background-color: white;
+}
+.border{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.border-md{
+    border-radius: 10%;
+}
+.border-btm{
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.line{
+    line-height: 30px;
+}
+.letter{
+    letter-spacing: 3px;
+}
+.line-half{
+    line-height: 20px;
+}
+.letter-half{
+    letter-spacing: 2px;
+}
+.center{
+    text-align: center;
+}
+.round{
+    border-radius: 50%;
+}
+.full-width{
+    max-width:100%;
+}
+.title, h1{
+    color: deeppink;
+}
+.sub{
+    color: indigo;
+}
+a:hover, .nav-link:hover{
+    color: deeppink;
+}
+.navbar-brand:hover{
+    color: indigo;
+}
+.margin{
+    margin: 5%;
+}

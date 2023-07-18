@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Contact } from 'src/app/classes/contact/contact';
@@ -13,10 +14,11 @@ export class StandardService {
   addCont = api + 'contacts';
 
   constructor(
-    private handler: ReqHandlerService
+    private handler: ReqHandlerService,
+    private http: HttpClient
   ) {}
 
   postContact(data: Contact): Observable<Contact>{
-    return this.handler.handlePOST<Contact>(this.addCont, data)
+    return this.http.post<Contact>(this.addCont, data)
   }
 }

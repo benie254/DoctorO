@@ -18,11 +18,21 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ReqInterceptor } from './interceptor/req.interceptor';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ServicesComponent } from './components/services/services.component';
+import { GuaranteesComponent } from './components/guarantees/guarantees.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    ContactComponent,
+    ServicesComponent,
+    GuaranteesComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +50,7 @@ import { HomeComponent } from './components/home/home.component';
     MatExpansionModule,
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: ReqInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: ReqInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
 })
